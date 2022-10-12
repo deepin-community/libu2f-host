@@ -1,0 +1,87 @@
+Source: libu2f-host
+Maintainer: Debian Authentication Maintainers <team+auth@tracker.debian.org>
+Uploaders:
+	Klas Lindfors <klas@yubico.com>,
+	Dain Nilsson <dain@yubico.com>,
+	nicoo <nicoo@debian.org>
+Section: utils
+Priority: optional
+Build-Depends: dblatex,
+               debhelper-compat (= 13),
+               gengetopt,
+               gtk-doc-tools,
+               help2man,
+               libglib2.0-dev,
+               libhidapi-dev,
+               libjson-c-dev,
+               pkg-config,
+               python3,
+               udev [linux-any]
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
+Homepage: https://developers.yubico.com/libu2f-host/
+Vcs-Browser: https://salsa.debian.org/auth-team/libu2f-host
+Vcs-Git: https://salsa.debian.org/auth-team/libu2f-host.git
+
+Package: libu2f-udev
+Architecture: all
+Multi-Arch: foreign
+Section: oldlibs
+Depends: ${misc:Depends}, udev (>= 244)
+Description: Universal 2nd Factor (U2F) — transitional package
+ Libu2f is a package for doing Universal 2nd Factor (U2F) host communication
+ and has functionality for the Registration and Authentication operations.
+ .
+ This package is not necessary anymore, and can be safely removed: since udev
+ v244, U2F devices are autodetected without needing 3rd party udev rules.
+
+Package: libu2f-host0
+Architecture: any
+Multi-Arch: same
+Section: libs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Universal 2nd Factor (U2F) host communication C Library
+ Libu2f is a package for doing Universal 2nd Factor (U2F) host communication
+ and has functionality for the Registration and Authentication operations.
+ The package contains a C library, a command line tool, and documentation.
+ .
+ This package contains the run-time shared library, and you normally do not
+ need to install this manually.
+
+Package: libu2f-host-dev
+Architecture: any
+Section: libdevel
+Depends: ${misc:Depends}, libu2f-host0 (= ${binary:Version})
+Suggests: libu2f-host-doc
+Description: Development files for the U2F host C library libu2f-host
+ Libu2f is a package for doing Universal 2nd Factor (U2F) host communication
+ and has functionality for the Registration and Authentication operations.
+ The package contains a C library, a command line tool, and documentation.
+ .
+ This package contains development files for the libu2f-host library.
+
+Package: libu2f-host-doc
+Architecture: all
+Multi-Arch: foreign
+Section: doc
+Depends: ${misc:Depends}, libu2f-host-dev
+Breaks: libu2f-host-dev (<< 1.1.6-1)
+Replaces: libu2f-host-dev (<< 1.1.6-1)
+Description: Documentation for the U2F host C library libu2f-host
+ Libu2f is a package for doing Universal 2nd Factor (U2F) host communication
+ and has functionality for the Registration and Authentication operations.
+ The package contains a C library, a command line tool, and documentation.
+ .
+ This package contains the documentation for the libu2f-host library.
+
+Package: u2f-host
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Command line tool to do Universal 2nd Factor (U2F) operations
+ Libu2f is a package for doing Universal 2nd Factor (U2F) host communication
+ and has functionality for the Registration and Authentication operations.
+ The package contains a C library, a command line tool, and documentation.
+ .
+ This is a command line tool to do registration and authentication
+ with a U2F device.

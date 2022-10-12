@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Yubico Universal 2nd Factor C Library" link="index.html" author="" name="u2f-host" version="2" language="c" online="https://github.com/Yubico/libu2f-host">
+  <chapters>
+    <sub name="Yubico Universal 2nd Factor C Library" link="intro.html">
+      <sub name="u2f-host" link="u2f-host-u2f-host.html"/>
+      <sub name="u2f-host-types" link="u2f-host-u2f-host-types.html"/>
+      <sub name="u2f-host-version" link="u2f-host-u2f-host-version.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="enum" name="enum u2fh_rc" link="u2f-host-u2f-host-types.html#u2fh-rc"/>
+    <keyword type="enum" name="enum u2fh_initflags" link="u2f-host-u2f-host-types.html#u2fh-initflags"/>
+    <keyword type="enum" name="enum u2fh_cmdflags" link="u2f-host-u2f-host-types.html#u2fh-cmdflags"/>
+    <keyword type="typedef" name="u2fh_devs" link="u2f-host-u2f-host-types.html#u2fh-devs"/>
+    <keyword type="function" name="u2fh_check_version ()" link="u2f-host-u2f-host-version.html#u2fh-check-version"/>
+    <keyword type="macro" name="U2FH_VERSION_STRING" link="u2f-host-u2f-host-version.html#U2FH-VERSION-STRING:CAPS"/>
+    <keyword type="macro" name="U2FH_VERSION_NUMBER" link="u2f-host-u2f-host-version.html#U2FH-VERSION-NUMBER:CAPS"/>
+    <keyword type="macro" name="U2FH_VERSION_MAJOR" link="u2f-host-u2f-host-version.html#U2FH-VERSION-MAJOR:CAPS"/>
+    <keyword type="macro" name="U2FH_VERSION_MINOR" link="u2f-host-u2f-host-version.html#U2FH-VERSION-MINOR:CAPS"/>
+    <keyword type="macro" name="U2FH_VERSION_PATCH" link="u2f-host-u2f-host-version.html#U2FH-VERSION-PATCH:CAPS"/>
+    <keyword type="constant" name="U2FH_OK" link="u2f-host-u2f-host-types.html#U2FH-OK:CAPS"/>
+    <keyword type="constant" name="U2FH_MEMORY_ERROR" link="u2f-host-u2f-host-types.html#U2FH-MEMORY-ERROR:CAPS"/>
+    <keyword type="constant" name="U2FH_TRANSPORT_ERROR" link="u2f-host-u2f-host-types.html#U2FH-TRANSPORT-ERROR:CAPS"/>
+    <keyword type="constant" name="U2FH_JSON_ERROR" link="u2f-host-u2f-host-types.html#U2FH-JSON-ERROR:CAPS"/>
+    <keyword type="constant" name="U2FH_BASE64_ERROR" link="u2f-host-u2f-host-types.html#U2FH-BASE64-ERROR:CAPS"/>
+    <keyword type="constant" name="U2FH_NO_U2F_DEVICE" link="u2f-host-u2f-host-types.html#U2FH-NO-U2F-DEVICE:CAPS"/>
+    <keyword type="constant" name="U2FH_AUTHENTICATOR_ERROR" link="u2f-host-u2f-host-types.html#U2FH-AUTHENTICATOR-ERROR:CAPS"/>
+    <keyword type="constant" name="U2FH_TIMEOUT_ERROR" link="u2f-host-u2f-host-types.html#U2FH-TIMEOUT-ERROR:CAPS"/>
+    <keyword type="constant" name="U2FH_SIZE_ERROR" link="u2f-host-u2f-host-types.html#U2FH-SIZE-ERROR:CAPS"/>
+    <keyword type="constant" name="U2FH_DEBUG" link="u2f-host-u2f-host-types.html#U2FH-DEBUG:CAPS"/>
+    <keyword type="constant" name="U2FH_REQUEST_USER_PRESENCE" link="u2f-host-u2f-host-types.html#U2FH-REQUEST-USER-PRESENCE:CAPS"/>
+  </functions>
+</book>

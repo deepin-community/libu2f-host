@@ -1,0 +1,28 @@
+From: nicoo <nicoo@debian.org>
+Date: Thu, 14 Jan 2021 18:37:48 +0100
+Subject: ChangeLog: Update nicoo's name
+
+---
+ ChangeLog | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/ChangeLog b/ChangeLog
+index feb76cb..7cabddf 100644
+--- a/ChangeLog
++++ b/ChangeLog
+@@ -93,13 +93,13 @@
+ 	Kihlman <g.kihlman@yubico.com> Date:   Wed Feb 13 10:24:14 2019
+ 	+0100
+ 
+-2019-02-08  Nicolas Braud-Santoni <nicolas@braud-santoni.eu>
++2019-02-08  nicoo <nicoo@debian.org>
+ 
+ 	* 70-u2f.rules: 70-u2f.rules: Support group plugdev Made with:    sed -i 's|^\(K.*\)$|\0, GROUP="plugdev"|g'
+ 	70-u2f.rules Checked with: diff <(sed 's/TAG+="uaccess", //g'
+ 	70-u2f.rules) 70-old-u2f.rules Closes #96
+ 
+-2018-05-06  Nicolas Braud-Santoni <nicolas@braud-santoni.eu>
++2018-05-06  nicoo <nicoo@debian.org>
+ 
+ 	* 70-old-u2f.rules: 70-old-u2f.rules: Remove extraneous space
+ 

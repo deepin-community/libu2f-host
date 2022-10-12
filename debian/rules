@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-silent-rules \
+		--with-udevrulesdir=/lib/udev/rules.d \
+		--enable-gtk-doc \
+		--enable-gtk-doc-pdf \
+		--enable-gtk-doc-html
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_compress:
+	dh_compress -Xu2f-host.pdf
